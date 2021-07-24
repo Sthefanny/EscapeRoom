@@ -16,7 +16,7 @@
         <!--View Controller-->
         <scene sceneID="yo2-A2-z1C">
             <objects>
-                <viewController id="Kc3-X8-99r" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="Kc3-X8-99r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VmS-FK-dQz">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                 <rect key="frame" x="30" y="40" width="500" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5ZX-Qx-pVA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZX-Qx-pVA">
                                 <rect key="frame" x="553" y="33" width="301" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,15 +40,12 @@
                                 <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n37-L4-rw9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n37-L4-rw9" userLabel="Next">
                                 <rect key="frame" x="795" y="350" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Next"/>
                                 <connections>
-                                    <segue destination="YMc-Lv-XrK" kind="show" id="0Xj-bC-4XX">
-                                        <segue key="commit" inheritsFrom="parent" id="Jks-vi-iXD"/>
-                                        <segue key="preview" inheritsFrom="commit" id="pf1-PL-S1e"/>
-                                    </segue>
+                                    <segue destination="YMc-Lv-XrK" kind="showDetail" animates="NO" id="G1w-ap-rW7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,13 +69,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="77x-8t-rSh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Arisu foi num banheiro público..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77x-8t-rSh">
                                 <rect key="frame" x="553" y="33" width="301" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
-                                <string key="text">Após o dia inteiro jogando seus jogos online, Arisu resolveu passear um pouco pelo centro de Tóquio para poder refrescar a mente após mais uma das recorrentes reclamações de seu pai quanto a jogar o dia inteiro...</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -87,29 +83,421 @@
                                 <rect key="frame" x="80" y="27" width="417" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="fPH-JU-aJT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A05-UW-3Vu" userLabel="Next">
                                 <rect key="frame" x="795" y="350" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="H9q-rI-jF4" kind="showDetail" animates="NO" id="3PN-KH-OWi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oO8-qh-WrS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0rG-2y-HZX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZe-DL-DwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1593.75" y="111.59420289855073"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hGk-i5-dF5">
+            <objects>
+                <viewController id="H9q-rI-jF4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I1b-0C-9t4">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-g0-xSu">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ao sair pensou em ir comer algo no seu restaurante preferido..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-Cj-VR1">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 03" translatesAutoresizingMaskIntoConstraints="NO" id="HP8-xX-fvZ">
+                                <rect key="frame" x="80" y="27" width="417" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Nj-n0Y" userLabel="Next">
+                                <rect key="frame" x="795" y="350" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="fwx-gK-KAs" kind="showDetail" animates="NO" id="73N-jc-7eh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HdU-cr-BfK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v38-9T-YCc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI8-z3-lva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yoh-xk-p2N">
+            <objects>
+                <viewController id="fwx-gK-KAs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJg-iQ-G1G">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="beZ-yS-Yyc">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-mE-WdX">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Quando saiu do banheiro público, Arisu notou algo muito estranho: não tinha mais NINGUÉM naquele local.
+
+Ele procurou em vários lugares, mas não conseguiu achar ninguém...</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 04" translatesAutoresizingMaskIntoConstraints="NO" id="hCY-pj-FKX">
+                                <rect key="frame" x="27" y="-12" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU4-Qy-8l0" userLabel="Next">
+                                <rect key="frame" x="795" y="350" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="UHI-YI-uA4" kind="showDetail" animates="NO" id="Soq-lA-CWT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U2q-pn-0Ro"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R7d-74-1Ui"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EI5-8y-J0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018.0803571428569" y="111.59420289855073"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NDv-fj-Uvk">
+            <objects>
+                <viewController id="UHI-YI-uA4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otn-0g-aHY">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="8iO-vM-CHb">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Já tinha anoitecido e Arisu não sabia mais o que fazer, até que um telão em um dos prédios acendeu e apareceu um texto escrito." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruz-Cg-Xuo">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 05" translatesAutoresizingMaskIntoConstraints="NO" id="lVy-ik-exj">
+                                <rect key="frame" x="27" y="-12" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2E-Ui-afc" userLabel="Cena 05 - Telão">
+                                <rect key="frame" x="166" y="109" width="229" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Cena 05 - Telão"/>
+                                <connections>
+                                    <segue destination="deZ-pS-0F1" kind="showDetail" animates="NO" id="Dde-CY-68X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xmb-Yq-vjq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g4z-JD-bED"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jrd-5h-K7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751.3392857142853" y="113.04347826086958"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IUS-e9-EH3">
+            <objects>
+                <viewController id="deZ-pS-0F1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DNO-Oy-cxm">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-uR-GhE">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-e2-ssV">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">O JOGO JÁ VAI COMEÇAR.
+
+DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 5.1 - Telão" translatesAutoresizingMaskIntoConstraints="NO" id="ofq-29-cUi">
+                                <rect key="frame" x="166" y="109" width="229" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 05" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-cU-Irb">
+                                <rect key="frame" x="27" y="-12" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-NG-KQX" userLabel="Next">
+                                <rect key="frame" x="795" y="350" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="zmq-jp-6NE" kind="showDetail" animates="NO" id="Q1g-vk-1ID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WpV-a7-c6B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="15d-SX-gvf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sop-lJ-vT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4446" y="112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wjg-cH-UfS">
+            <objects>
+                <viewController id="zmq-jp-6NE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61R-ZF-Rqr">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="WKB-9L-t6f">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7G-j7-3et">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Ao seguir algumas setas que foram aparecendo pela cidade, Arisu se deparou com esse prédio com uma tela informando que era a arena de jogos.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 06" translatesAutoresizingMaskIntoConstraints="NO" id="9wV-zC-XKd">
+                                <rect key="frame" x="27" y="-12" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-dp-zu8" userLabel="Next">
+                                <rect key="frame" x="795" y="350" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="fsP-1p-Z9e" kind="showDetail" animates="NO" id="uJQ-m3-2o2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lLd-7l-vSc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vrb-1a-cLv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izM-Ie-tEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5150" y="113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZRO-eb-Oif">
+            <objects>
+                <viewController id="fsP-1p-Z9e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLD-po-JJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EVR-su-sme">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ao entrar no prédio, tinha um corredor com mais uma seta para um outro corredor com uma porta de elevador vermelha fechada." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-qO-CWE">
+                                <rect key="frame" x="553" y="33" width="301" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Cena 07" translatesAutoresizingMaskIntoConstraints="NO" id="wmO-1U-GM8">
+                                <rect key="frame" x="27" y="-12" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnM-My-ZeS" userLabel="Next">
+                                <rect key="frame" x="795" y="350" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="A6l-2a-CLR" kind="showDetail" animates="NO" id="2ts-Ns-2OD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b4I-7l-MpI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Byi-Ab-735"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nd-55-y0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5864" y="112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xco-hy-vsY">
+            <objects>
+                <viewController id="A6l-2a-CLR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWs-Sj-JzO">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uPF-8R-s3a">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Corredor" translatesAutoresizingMaskIntoConstraints="NO" id="iuu-8F-IrD">
+                                <rect key="frame" x="196" y="-10" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEM-e7-iCo" userLabel="Mural">
+                                <rect key="frame" x="545" y="148" width="15" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Mural"/>
+                                <connections>
+                                    <segue destination="pcI-0W-IKR" kind="show" animates="NO" id="Xcf-EU-gSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-1u-m9k" userLabel="Elevador">
+                                <rect key="frame" x="384" y="6" width="129" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Elevador"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ke0-0y-Tld"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T2b-2J-Le2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4u-J8-m99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6552.4553571428569" y="111.59420289855073"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jmK-JT-aFB">
+            <objects>
+                <viewController id="pcI-0W-IKR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hlQ-5j-ZrH">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-uF-dmX">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Mural aberto" translatesAutoresizingMaskIntoConstraints="NO" id="hpQ-Ll-EsZ">
+                                <rect key="frame" x="196" y="-10" width="505" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-jR-i42" userLabel="Back">
+                                <rect key="frame" x="60" y="20" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="Back"/>
+                                <connections>
+                                    <segue destination="A6l-2a-CLR" kind="showDetail" animates="NO" id="fK3-Uw-crL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-ZC-Bn6" userLabel="Papel grande">
+                                <rect key="frame" x="399" y="175" width="114.5" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel grande"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-jv-GSe" userLabel="Papel grande">
+                                <rect key="frame" x="557" y="68" width="114.5" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel grande"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-C2-B6N" userLabel="Papel pequeno">
+                                <rect key="frame" x="588" y="265" width="74.5" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel pequeno"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfX-Yl-JeL" userLabel="Papel pequeno">
+                                <rect key="frame" x="242" y="304" width="74.5" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel pequeno"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwp-QB-wLe" userLabel="Papel grande">
+                                <rect key="frame" x="242" y="51" width="114.5" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel grande"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vdQ-bw-yvo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j4C-nf-zgg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSD-F0-4Dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7229" y="112"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pf1-PL-S1e"/>
+        <segue reference="Xcf-EU-gSk"/>
+        <segue reference="fK3-Uw-crL"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Back" width="54" height="45.5"/>
         <image name="Background" width="1792" height="828"/>
         <image name="Cena 01" width="1060" height="712"/>
         <image name="Cena 02" width="896" height="772"/>
+        <image name="Cena 03" width="896" height="772"/>
+        <image name="Cena 04" width="1060" height="712"/>
+        <image name="Cena 05" width="1090" height="700"/>
+        <image name="Cena 05 - Telão" width="490" height="416"/>
+        <image name="Cena 06" width="1086" height="696"/>
+        <image name="Cena 07" width="1086" height="696"/>
+        <image name="Cena 5.1 - Telão" width="494" height="421"/>
+        <image name="Corredor" width="436" height="828"/>
+        <image name="Elevador" width="229" height="194"/>
+        <image name="Mural" width="15" height="100"/>
+        <image name="Mural aberto" width="960" height="744"/>
         <image name="Next" width="108" height="91"/>
+        <image name="Papel grande" width="230" height="250"/>
+        <image name="Papel pequeno" width="150" height="92"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
