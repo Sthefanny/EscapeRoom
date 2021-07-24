@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kc3-X8-99r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A6l-2a-CLR">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--01-->
         <scene sceneID="yo2-A2-z1C">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="Kc3-X8-99r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kc3-X8-99r" userLabel="01" customClass="ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VmS-FK-dQz">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="830.35714285714278" y="113.04347826086958"/>
         </scene>
-        <!--View Controller-->
+        <!--02-->
         <scene sceneID="1dE-Ec-kQy">
             <objects>
-                <viewController id="YMc-Lv-XrK" sceneMemberID="viewController">
+                <viewController id="YMc-Lv-XrK" userLabel="02" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9QH-nx-AvE">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,12 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZe-DL-DwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593.75" y="111.59420289855073"/>
+            <point key="canvasLocation" x="830" y="894"/>
         </scene>
-        <!--View Controller-->
+        <!--03-->
         <scene sceneID="hGk-i5-dF5">
             <objects>
-                <viewController id="H9q-rI-jF4" sceneMemberID="viewController">
+                <viewController id="H9q-rI-jF4" userLabel="03" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1b-0C-9t4">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,12 +142,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kI8-z3-lva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2310" y="113"/>
+            <point key="canvasLocation" x="830" y="1693"/>
         </scene>
-        <!--View Controller-->
+        <!--04-->
         <scene sceneID="Yoh-xk-p2N">
             <objects>
-                <viewController id="fwx-gK-KAs" sceneMemberID="viewController">
+                <viewController id="fwx-gK-KAs" userLabel="04" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJg-iQ-G1G">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,12 +189,12 @@ Ele procurou em vários lugares, mas não conseguiu achar ninguém...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EI5-8y-J0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3018.0803571428569" y="111.59420289855073"/>
+            <point key="canvasLocation" x="1508" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--05-->
         <scene sceneID="NDv-fj-Uvk">
             <objects>
-                <viewController id="UHI-YI-uA4" sceneMemberID="viewController">
+                <viewController id="UHI-YI-uA4" userLabel="05" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Otn-0g-aHY">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,12 +233,12 @@ Ele procurou em vários lugares, mas não conseguiu achar ninguém...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrd-5h-K7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751.3392857142853" y="113.04347826086958"/>
+            <point key="canvasLocation" x="1507" y="893"/>
         </scene>
-        <!--View Controller-->
+        <!--05.1-->
         <scene sceneID="IUS-e9-EH3">
             <objects>
-                <viewController id="deZ-pS-0F1" sceneMemberID="viewController">
+                <viewController id="deZ-pS-0F1" userLabel="05.1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNO-Oy-cxm">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,12 +284,12 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sop-lJ-vT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4446" y="112"/>
+            <point key="canvasLocation" x="1507" y="1693"/>
         </scene>
-        <!--View Controller-->
+        <!--06-->
         <scene sceneID="Wjg-cH-UfS">
             <objects>
-                <viewController id="zmq-jp-6NE" sceneMemberID="viewController">
+                <viewController id="zmq-jp-6NE" userLabel="06" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="61R-ZF-Rqr">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,12 +329,12 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izM-Ie-tEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5150" y="113"/>
+            <point key="canvasLocation" x="2186" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--07-->
         <scene sceneID="ZRO-eb-Oif">
             <objects>
-                <viewController id="fsP-1p-Z9e" sceneMemberID="viewController">
+                <viewController id="fsP-1p-Z9e" userLabel="07" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YLD-po-JJ3">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,12 +373,12 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nd-55-y0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5864" y="112"/>
+            <point key="canvasLocation" x="2186" y="893"/>
         </scene>
-        <!--View Controller-->
+        <!--Corridor-->
         <scene sceneID="Xco-hy-vsY">
             <objects>
-                <viewController id="A6l-2a-CLR" sceneMemberID="viewController">
+                <viewController id="A6l-2a-CLR" userLabel="Corridor" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWs-Sj-JzO">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,18 +391,21 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <rect key="frame" x="196" y="-10" width="505" height="435"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-1u-m9k" userLabel="Elevador">
+                                <rect key="frame" x="384" y="6" width="129" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Elevador"/>
+                                <connections>
+                                    <segue destination="U0n-eP-Wh9" kind="showDetail" animates="NO" id="DX8-xV-ah4"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEM-e7-iCo" userLabel="Mural">
-                                <rect key="frame" x="545" y="148" width="15" height="74"/>
+                                <rect key="frame" x="536" y="153" width="26" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Mural"/>
                                 <connections>
                                     <segue destination="pcI-0W-IKR" kind="show" animates="NO" id="Xcf-EU-gSk"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-1u-m9k" userLabel="Elevador">
-                                <rect key="frame" x="384" y="6" width="129" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Elevador"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ke0-0y-Tld"/>
@@ -412,12 +415,12 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4u-J8-m99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6552.4553571428569" y="111.59420289855073"/>
+            <point key="canvasLocation" x="1507" y="2787"/>
         </scene>
-        <!--View Controller-->
+        <!--Opened Panel-->
         <scene sceneID="jmK-JT-aFB">
             <objects>
-                <viewController id="pcI-0W-IKR" sceneMemberID="viewController">
+                <viewController id="pcI-0W-IKR" userLabel="Opened Panel" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlQ-5j-ZrH">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,15 +475,272 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSD-F0-4Dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7229" y="112"/>
+            <point key="canvasLocation" x="2186" y="2787"/>
+        </scene>
+        <!--Room 01-->
+        <scene sceneID="Kc2-0r-MAx">
+            <objects>
+                <viewController storyboardIdentifier="Room01ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U0n-eP-Wh9" userLabel="Room 01" customClass="Room01ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8L6-8T-uCH">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-hX-Vuv">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="c23-3M-e9h">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnb-bk-PAl" userLabel="Porta entrada">
+                                <rect key="frame" x="572" y="46" width="24" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="Chy-vZ-DxA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-aq-N1h" userLabel="Porta viver">
+                                <rect key="frame" x="174" y="166" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="hFU-aE-dWw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6K-WO-mQr" userLabel="Porta morrer">
+                                <rect key="frame" x="354" y="346" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="5BN-7K-FRu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="uOC-MS-FVV">
+                                <rect key="frame" x="517" y="64" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB3-G8-Ck6">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="cM1-tf-Mgn">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="4mU-P0-7b5">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-ww-jEd">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="Qzv-eA-EuS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a76-gN-WIW">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="9bV-Ci-DLV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fqs-Ma-7Q3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="grj-3d-xPm"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="4mU-P0-7b5" id="1L0-wh-L1W"/>
+                        <outlet property="liveDoor" destination="cM1-tf-Mgn" id="YM3-tN-2H6"/>
+                        <outlet property="lockedDoorInfo" destination="kB3-G8-Ck6" id="TQ2-uu-uYH"/>
+                        <outlet property="noButton" destination="a76-gN-WIW" id="b5h-fG-sBt"/>
+                        <outlet property="yesButton" destination="6xX-ww-jEd" id="aZ9-dV-UzC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdK-Ra-Xod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.6875" y="3724.6376811594205"/>
+        </scene>
+        <!--Room 02-->
+        <scene sceneID="Jax-KK-o6D">
+            <objects>
+                <viewController storyboardIdentifier="Room02ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fzp-T9-9ek" userLabel="Room 02" customClass="Room02ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5HL-dV-jdf">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Jol-RA-4jR">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="jh1-y0-DgA">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-HK-IYv" userLabel="Porta entrada">
+                                <rect key="frame" x="358" y="43" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="fzp-T9-9ek" eventType="touchUpInside" id="vfv-y4-5Cj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-rb-5z4" userLabel="Porta morrer">
+                                <rect key="frame" x="174" y="166" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="mpR-qI-tIP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-jf-r0y" userLabel="Porta viver">
+                                <rect key="frame" x="354" y="346" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="uHs-FS-blu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2c-8p-FTi">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="2wY-6U-eZg">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="ezq-q0-srd">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x1-J9-Bcs">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="sSc-fL-RQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5I-mK-5QN">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="4FD-kz-cxO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-P2-bqi">
+                                <rect key="frame" x="380" y="51" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IGh-Bc-dMG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J3f-jJ-dXI"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="iRM-rb-5z4" id="vzL-CW-b9c"/>
+                        <outlet property="liveDoor" destination="5CP-jf-r0y" id="VI7-DV-4l0"/>
+                        <outlet property="lockedDoorInfo" destination="Y2c-8p-FTi" id="k1e-m9-Boo"/>
+                        <outlet property="noButton" destination="Q5I-mK-5QN" id="uuy-8f-sr9"/>
+                        <outlet property="yesButton" destination="2x1-J9-Bcs" id="VlI-zd-GtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwP-Ev-Lx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507" y="3725"/>
+        </scene>
+        <!--Die-->
+        <scene sceneID="eJd-ay-bYN">
+            <objects>
+                <viewController storyboardIdentifier="DieViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jTT-rw-DZz" userLabel="Die" customClass="DieViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="geL-fE-h17">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="MkM-Pu-vRg">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="4wc-ap-QZa">
+                                <rect key="frame" x="348" y="35" width="86" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Laser" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-og-Taf">
+                                <rect key="frame" x="60" y="63" width="700" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sangue" translatesAutoresizingMaskIntoConstraints="NO" id="qde-ji-8jf">
+                                <rect key="frame" x="331" y="42" width="34" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bea-eT-9c5">
+                                <rect key="frame" x="535" y="156" width="301" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Arisu foi atingido por um laser que o matou instantaneamente...
+
+
+GAME OVER</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ql1-P0-RSb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUX-3z-bDA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qk8-eZ-WBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194.8660714285711" y="3215.9420289855075"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xcf-EU-gSk"/>
         <segue reference="fK3-Uw-crL"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Back" width="54" height="45.5"/>
+        <image name="Back" width="108" height="91"/>
         <image name="Background" width="1792" height="828"/>
         <image name="Cena 01" width="1060" height="712"/>
         <image name="Cena 02" width="896" height="772"/>
@@ -493,11 +753,21 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
         <image name="Cena 5.1 - Telão" width="494" height="421"/>
         <image name="Corredor" width="436" height="828"/>
         <image name="Elevador" width="229" height="194"/>
-        <image name="Mural" width="15" height="100"/>
+        <image name="Laser" width="2160" height="64"/>
+        <image name="Mural" width="47" height="194"/>
         <image name="Mural aberto" width="960" height="744"/>
         <image name="Next" width="108" height="91"/>
         <image name="Papel grande" width="230" height="250"/>
         <image name="Papel pequeno" width="150" height="92"/>
+        <image name="Personagem" width="58" height="177"/>
+        <image name="Porta morrer" width="600" height="828"/>
+        <image name="Porta verde" width="68" height="237"/>
+        <image name="Porta verde h" width="237" height="68"/>
+        <image name="Porta vermelha" width="59" height="180"/>
+        <image name="Porta vermelha h" width="180" height="58"/>
+        <image name="Porta viver" width="600" height="828"/>
+        <image name="Sala" width="996" height="718"/>
+        <image name="Sangue" width="84" height="488"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

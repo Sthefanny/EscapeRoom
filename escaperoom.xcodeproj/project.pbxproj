@@ -13,6 +13,10 @@
 		E555695426A894BC008C8E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E555695226A894BC008C8E88 /* Main.storyboard */; };
 		E555695626A894BE008C8E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E555695526A894BE008C8E88 /* Assets.xcassets */; };
 		E555695926A894BE008C8E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E555695726A894BE008C8E88 /* LaunchScreen.storyboard */; };
+		E5A8F4EF26AC85B20093D4E5 /* Room01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4EE26AC85B20093D4E5 /* Room01ViewController.swift */; };
+		E5A8F4F226AC925A0093D4E5 /* DoorTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */; };
+		E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */; };
+		E5A8F4F626AC98AE0093D4E5 /* DieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */; };
 		E5FE214826AB724B00F1EE1C /* rexlia rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5FE214726AB724500F1EE1C /* rexlia rg.otf */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		E555695526A894BE008C8E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E555695826A894BE008C8E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E555695A26A894BE008C8E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A8F4EE26AC85B20093D4E5 /* Room01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room01ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorTypeEnum.swift; sourceTree = "<group>"; };
+		E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room02ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieViewController.swift; sourceTree = "<group>"; };
 		E5FE214726AB724500F1EE1C /* rexlia rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rexlia rg.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,16 +66,36 @@
 		E555694B26A894BC008C8E88 /* escaperoom */ = {
 			isa = PBXGroup;
 			children = (
+				E5A8F4F026AC92430093D4E5 /* Models */,
+				E5A8F4ED26AC85880093D4E5 /* Controllers */,
 				E5FE214626AB721E00F1EE1C /* Fonts */,
 				E555694C26A894BC008C8E88 /* AppDelegate.swift */,
 				E555694E26A894BC008C8E88 /* SceneDelegate.swift */,
-				E555695026A894BC008C8E88 /* ViewController.swift */,
 				E555695226A894BC008C8E88 /* Main.storyboard */,
 				E555695526A894BE008C8E88 /* Assets.xcassets */,
 				E555695726A894BE008C8E88 /* LaunchScreen.storyboard */,
 				E555695A26A894BE008C8E88 /* Info.plist */,
 			);
 			path = escaperoom;
+			sourceTree = "<group>";
+		};
+		E5A8F4ED26AC85880093D4E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E555695026A894BC008C8E88 /* ViewController.swift */,
+				E5A8F4EE26AC85B20093D4E5 /* Room01ViewController.swift */,
+				E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */,
+				E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E5A8F4F026AC92430093D4E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E5FE214626AB721E00F1EE1C /* Fonts */ = {
@@ -151,6 +179,10 @@
 			files = (
 				E555695126A894BC008C8E88 /* ViewController.swift in Sources */,
 				E555694D26A894BC008C8E88 /* AppDelegate.swift in Sources */,
+				E5A8F4F226AC925A0093D4E5 /* DoorTypeEnum.swift in Sources */,
+				E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */,
+				E5A8F4F626AC98AE0093D4E5 /* DieViewController.swift in Sources */,
+				E5A8F4EF26AC85B20093D4E5 /* Room01ViewController.swift in Sources */,
 				E555694F26A894BC008C8E88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
