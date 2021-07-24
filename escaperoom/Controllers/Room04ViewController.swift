@@ -1,5 +1,5 @@
 //
-//  Room02ViewController.swift
+//  Room04ViewController.swift
 //  escaperoom
 //
 //  Created by Sthefanny Gonzaga on 24/07/21.
@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-class Room02ViewController: UIViewController {
+class Room04ViewController: UIViewController {
     @IBOutlet weak var lockedDoorInfo: UITextView!
     @IBOutlet weak var liveDoor: UIImageView!
     @IBOutlet weak var dieDoor: UIImageView!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
     var actualDoor: DoorType?
-    let nextSceneName: String = "Room03ViewController"
+    let nextSceneName: String = "Room05ViewController"
     let dieSceneName: String = "DieViewController"
-    let rightDoor: DoorType = .live
+    let rightDoor: DoorType = .die
     
     override func viewDidLoad() {
         super.viewDidLoad()

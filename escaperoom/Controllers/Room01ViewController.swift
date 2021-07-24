@@ -17,6 +17,7 @@ class Room01ViewController: UIViewController {
     var actualDoor: DoorType?
     let nextSceneName: String = "Room02ViewController"
     let dieSceneName: String = "DieViewController"
+    let rightDoor: DoorType = .die
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,7 @@ class Room01ViewController: UIViewController {
     }
     
     @IBAction func liveDoorAction(_ sender: Any) {
+        self.cleanAll()
         self.actualDoor = .live
         
         self.liveDoor.alpha = 1
@@ -38,6 +40,7 @@ class Room01ViewController: UIViewController {
     }
     
     @IBAction func dieDoorAction(_ sender: Any) {
+        self.cleanAll()
         self.actualDoor = .die
         
         self.dieDoor.alpha = 1
@@ -47,7 +50,7 @@ class Room01ViewController: UIViewController {
     
     @IBAction func yesButtonAction(_ sender: Any) {
         if self.actualDoor != nil {
-            let nextScene = self.actualDoor == .die ? nextSceneName : dieSceneName
+            let nextScene = self.actualDoor == rightDoor ? nextSceneName : dieSceneName
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: nextScene)
@@ -56,7 +59,11 @@ class Room01ViewController: UIViewController {
     }
     
     @IBAction func noButtonAction(_ sender: Any) {
-        
+        self.cleanAll()
+    }
+    
+    func cleanAll() {
+        self.actualDoor = nil
         self.liveDoor.alpha = 0
         self.dieDoor.alpha = 0
         self.yesButton.alpha = 0

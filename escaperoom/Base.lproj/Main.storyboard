@@ -611,7 +611,7 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Porta verde"/>
                                 <connections>
-                                    <action selector="liveDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="mpR-qI-tIP"/>
+                                    <action selector="dieDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="l2P-ff-N2s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-jf-r0y" userLabel="Porta viver">
@@ -619,7 +619,7 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Porta verde h"/>
                                 <connections>
-                                    <action selector="dieDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="uHs-FS-blu"/>
+                                    <action selector="liveDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="3wL-PA-Lq0"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2c-8p-FTi">
@@ -676,8 +676,8 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                     </view>
                     <navigationItem key="navigationItem" id="J3f-jJ-dXI"/>
                     <connections>
-                        <outlet property="dieDoor" destination="iRM-rb-5z4" id="vzL-CW-b9c"/>
-                        <outlet property="liveDoor" destination="5CP-jf-r0y" id="VI7-DV-4l0"/>
+                        <outlet property="dieDoor" destination="ezq-q0-srd" id="xfC-F3-IGr"/>
+                        <outlet property="liveDoor" destination="2wY-6U-eZg" id="e0N-44-OQN"/>
                         <outlet property="lockedDoorInfo" destination="Y2c-8p-FTi" id="k1e-m9-Boo"/>
                         <outlet property="noButton" destination="Q5I-mK-5QN" id="uuy-8f-sr9"/>
                         <outlet property="yesButton" destination="2x1-J9-Bcs" id="VlI-zd-GtF"/>
@@ -712,7 +712,7 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bea-eT-9c5">
-                                <rect key="frame" x="535" y="156" width="301" height="203"/>
+                                <rect key="frame" x="535" y="111" width="301" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -725,6 +725,14 @@ GAME OVER</string>
                                 <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-Nx-ZTW" userLabel="Next">
+                                <rect key="frame" x="776" y="343" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="Kc3-X8-99r" kind="showDetail" animates="NO" id="tZZ-kF-Qjr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ql1-P0-RSb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -733,11 +741,687 @@ GAME OVER</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk8-eZ-WBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3194.8660714285711" y="3215.9420289855075"/>
+            <point key="canvasLocation" x="3108" y="2787"/>
+        </scene>
+        <!--Room 03-->
+        <scene sceneID="erw-zl-YBT">
+            <objects>
+                <viewController storyboardIdentifier="Room03ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cZD-yd-C7F" userLabel="Room 03" customClass="Room03ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n9G-fI-JJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="43p-Z2-vTa">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="jmy-FD-rM5">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAQ-bh-HlL" userLabel="Porta entrada">
+                                <rect key="frame" x="358" y="43" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="cZD-yd-C7F" eventType="touchUpInside" id="vdO-sY-mnY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryP-is-4Ng" userLabel="Porta morrer">
+                                <rect key="frame" x="174" y="166" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="R36-Pb-TC9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-AM-RmI" userLabel="Porta viver">
+                                <rect key="frame" x="354" y="346" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="DG0-yj-Tjs"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-Nv-uU3">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-ji-zd5">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-u0-rmg">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1m-vv-CD3">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="yVR-W0-Z5n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCm-7T-Axb">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="Okg-tC-8iL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="VYM-od-D2N">
+                                <rect key="frame" x="410" y="70" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jsn-AN-TjL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VVm-j6-Ibj"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="SfB-u0-rmg" id="iCa-bT-zyg"/>
+                        <outlet property="liveDoor" destination="jSe-ji-zd5" id="BOx-hF-G7s"/>
+                        <outlet property="lockedDoorInfo" destination="l1n-Nv-uU3" id="dRf-e5-Awc"/>
+                        <outlet property="noButton" destination="BCm-7T-Axb" id="gaU-A7-5Dv"/>
+                        <outlet property="yesButton" destination="p1m-vv-CD3" id="Gpw-nH-Vdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgR-cZ-dWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="3725"/>
+        </scene>
+        <!--Room 04-->
+        <scene sceneID="q09-AH-3eO">
+            <objects>
+                <viewController storyboardIdentifier="Room04ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nmi-Ob-9BE" userLabel="Room 04" customClass="Room04ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nyx-eW-aYA">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-Uw-kNl">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-3W-n2S">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf7-xN-ad7" userLabel="Porta entrada">
+                                <rect key="frame" x="580" y="135" width="24" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="Q62-yS-LMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Der-oD-c6Y" userLabel="Porta morrer">
+                                <rect key="frame" x="174" y="166" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="uQ7-Mk-e39"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="LVp-gZ-pHI">
+                                <rect key="frame" x="538" y="135" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-h7-MxU">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="R3A-Kw-9bR">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-b4-upv">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-JX-JFe">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="gOV-vH-7bm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbO-JP-0ym">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="wUI-bv-cVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjs-ZC-v9t" userLabel="Porta viver">
+                                <rect key="frame" x="354" y="44" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="2LS-m1-6zQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DqK-jh-8Ek"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A16-I6-Wgu"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="z9e-b4-upv" id="Oq4-IF-5Yf"/>
+                        <outlet property="liveDoor" destination="R3A-Kw-9bR" id="SCe-JZ-6V1"/>
+                        <outlet property="lockedDoorInfo" destination="PDF-h7-MxU" id="uvV-2F-rRx"/>
+                        <outlet property="noButton" destination="xbO-JP-0ym" id="Aii-vN-Mma"/>
+                        <outlet property="yesButton" destination="Ohl-JX-JFe" id="wk4-fc-yEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFJ-LZ-eWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="4588"/>
+        </scene>
+        <!--Room 05-->
+        <scene sceneID="33S-f7-RWa">
+            <objects>
+                <viewController storyboardIdentifier="Room05ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezQ-Mg-y7r" userLabel="Room 05" customClass="Room05ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9mc-Z4-ThM">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hgT-gh-jvw">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-Bo-ceU">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfm-4t-2qp" userLabel="Porta morrer">
+                                <rect key="frame" x="354" y="44" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="ezQ-Mg-y7r" eventType="touchUpInside" id="UUf-vk-8a9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lk-qt-JW9" userLabel="Porta viver">
+                                <rect key="frame" x="354" y="346" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="ezQ-Mg-y7r" eventType="touchUpInside" id="pTE-pF-oMt"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-r3-YWx">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-0J-SwM">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-gP-zgU">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAe-ll-SYp">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="ezQ-Mg-y7r" eventType="touchUpInside" id="tLd-q0-n5A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2J-bQ-5AD">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="ezQ-Mg-y7r" eventType="touchUpInside" id="uaZ-y7-MuP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="vFG-9j-GaG">
+                                <rect key="frame" x="538" y="135" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFy-7h-8JA" userLabel="Porta entrada">
+                                <rect key="frame" x="580" y="135" width="24" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="vu8-Z4-9NV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Cn-RQ-pbq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0BN-kU-ohu"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="GSf-gP-zgU" id="cai-DC-Wz0"/>
+                        <outlet property="liveDoor" destination="pzb-0J-SwM" id="Nrs-nd-sUc"/>
+                        <outlet property="lockedDoorInfo" destination="hg1-r3-YWx" id="Qfc-Py-ZSy"/>
+                        <outlet property="noButton" destination="p2J-bQ-5AD" id="EUB-pa-2sA"/>
+                        <outlet property="yesButton" destination="RAe-ll-SYp" id="Wlw-E8-OkM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHx-pe-M97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507" y="4587"/>
+        </scene>
+        <!--Room 06-->
+        <scene sceneID="c2H-L8-4BG">
+            <objects>
+                <viewController storyboardIdentifier="Room06ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1h3-Wa-oiG" userLabel="Room 06" customClass="Room06ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vfc-dO-RJl">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-B7-M9f">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="O4R-xx-gTM">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6k-Ah-dY4" userLabel="Porta morrer">
+                                <rect key="frame" x="579" y="141" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="wFD-EY-Uaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQv-mW-pB4" userLabel="Porta viver">
+                                <rect key="frame" x="350" y="41" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="oil-mO-VaB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="NqE-qz-bu2">
+                                <rect key="frame" x="380" y="236" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss2-nb-DyM">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="N9k-vC-iL8">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-XQ-WKF">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ze-pI-oy1">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="h6m-D9-ew8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-Gc-63y">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="BF2-TG-sSB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcV-K0-hRl" userLabel="Porta entrada">
+                                <rect key="frame" x="358" y="346" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="soF-Qi-ate"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bW-VS-fCP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YMB-gp-gFQ"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="L8Y-XQ-WKF" id="H8P-6v-1N5"/>
+                        <outlet property="liveDoor" destination="N9k-vC-iL8" id="QSe-Jj-QSh"/>
+                        <outlet property="lockedDoorInfo" destination="ss2-nb-DyM" id="xVj-gk-9ll"/>
+                        <outlet property="noButton" destination="hr4-Gc-63y" id="1ax-jG-Qos"/>
+                        <outlet property="yesButton" destination="2ze-pI-oy1" id="EHl-sf-Xkn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqp-l9-fgK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="4587"/>
+        </scene>
+        <!--Room 07-->
+        <scene sceneID="ii7-fI-RJO">
+            <objects>
+                <viewController storyboardIdentifier="Room07ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dvb-02-bcn" userLabel="Room 07" customClass="Room07ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHl-Dk-fcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="nVl-tG-LHE">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Sala" translatesAutoresizingMaskIntoConstraints="NO" id="eM1-nG-Gr1">
+                                <rect key="frame" x="163" y="39" width="467" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-ab-opt" userLabel="Porta entrada">
+                                <rect key="frame" x="358" y="345" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="Dvb-02-bcn" eventType="touchUpInside" id="agP-jy-xlM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9a-e7-MKx" userLabel="Porta morrer">
+                                <rect key="frame" x="174" y="166" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="aSE-vt-5kv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrZ-dw-rgH" userLabel="Porta viver">
+                                <rect key="frame" x="579" y="136" width="24" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="K6R-MN-dxX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-7E-tQR">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-Fd-mSW">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="Bld-FM-4bF">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOp-Aw-TqS">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="AQB-qn-A66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-xi-VM0">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="z00-4X-PnH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-y5-AiX">
+                                <rect key="frame" x="380" y="231" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0sK-ax-8m1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ibb-qH-9dX"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="Bld-FM-4bF" id="gLN-uG-IHt"/>
+                        <outlet property="liveDoor" destination="aOU-Fd-mSW" id="rs9-Pu-Xbc"/>
+                        <outlet property="lockedDoorInfo" destination="lqq-7E-tQR" id="mSS-os-Vnx"/>
+                        <outlet property="noButton" destination="Qfe-xi-VM0" id="E2v-Ru-Xo4"/>
+                        <outlet property="yesButton" destination="fOp-Aw-TqS" id="nwi-dK-cEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKT-mN-XRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="5435"/>
+        </scene>
+        <!--Room 08-->
+        <scene sceneID="sfD-NR-VMu">
+            <objects>
+                <viewController storyboardIdentifier="Room08ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1R2-l3-UPS" userLabel="Room 08" customClass="Room08ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ciw-KA-Wyf">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-is-gOX">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ultima Sala" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-Ac-IVF">
+                                <rect key="frame" x="337" y="35" width="146" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-9h-jGE" userLabel="Porta morrer">
+                                <rect key="frame" x="354" y="41" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="dieDoorAction:" destination="1R2-l3-UPS" eventType="touchUpInside" id="baW-2U-iTU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYn-dK-n2R" userLabel="Porta viver">
+                                <rect key="frame" x="368" y="346" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="1R2-l3-UPS" eventType="touchUpInside" id="dWl-i8-jL5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-OJ-cg1">
+                                <rect key="frame" x="648" y="64" width="203" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-c8-EIe">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-AR-IQ1">
+                                <rect key="frame" x="671" y="39" width="150" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-sM-YN4">
+                                <rect key="frame" x="642" y="271" width="229" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, quero entrar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonAction:" destination="1R2-l3-UPS" eventType="touchUpInside" id="E8f-Py-aCx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-xD-jkz">
+                                <rect key="frame" x="642" y="325" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixa pra lá... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonAction:" destination="1R2-l3-UPS" eventType="touchUpInside" id="piX-eU-fOQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="KJ1-OF-DsI">
+                                <rect key="frame" x="375" y="156" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-Cj-kcj" userLabel="Porta entrada">
+                                <rect key="frame" x="352" y="170" width="24" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="1R2-l3-UPS" eventType="touchUpInside" id="8iy-D4-sBe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cSS-ic-CnQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BkW-Uk-VT9"/>
+                    <connections>
+                        <outlet property="dieDoor" destination="cQa-AR-IQ1" id="ky3-BV-J9G"/>
+                        <outlet property="liveDoor" destination="dZ7-c8-EIe" id="o7r-0A-2D9"/>
+                        <outlet property="lockedDoorInfo" destination="hYM-OJ-cg1" id="7om-LV-GEE"/>
+                        <outlet property="noButton" destination="Loa-xD-jkz" id="YuX-Kk-54L"/>
+                        <outlet property="yesButton" destination="Jy1-sM-YN4" id="Qa5-1I-84D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrO-52-aJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506.6964285714284" y="5434.7826086956529"/>
+        </scene>
+        <!--Win-->
+        <scene sceneID="2pi-5f-08F">
+            <objects>
+                <viewController storyboardIdentifier="EndViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1uh-o1-YUi" userLabel="Win" customClass="EndViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0Q-by-gnY">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="oQB-7y-97j">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfm-bm-3iI">
+                                <rect key="frame" x="134" y="59" width="620" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Arisu conseguiu sair do prédio e finalizar o primeiro jogo.
+
+Ele ganhou uma carta com um número 3, falando que essa é a quantidade de dias que consegue ficar vivo sem participar de um outro jogo.
+
+Aguarde as próximas instruções para o próximo jogo...</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77F-1g-SLc" userLabel="Next">
+                                <rect key="frame" x="776" y="343" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Next"/>
+                                <connections>
+                                    <segue destination="Kc3-X8-99r" kind="showDetail" animates="NO" id="AFc-yT-Yc9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fuG-GR-zCw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CuN-ot-saO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqO-mT-WdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185.7142857142858" y="5434.7826086956529"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="fK3-Uw-crL"/>
+        <segue reference="AFc-yT-Yc9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back" width="108" height="91"/>
@@ -768,6 +1452,7 @@ GAME OVER</string>
         <image name="Porta viver" width="600" height="828"/>
         <image name="Sala" width="996" height="718"/>
         <image name="Sangue" width="84" height="488"/>
+        <image name="Ultima Sala" width="854" height="1950"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

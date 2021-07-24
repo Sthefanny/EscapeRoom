@@ -17,6 +17,14 @@
 		E5A8F4F226AC925A0093D4E5 /* DoorTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */; };
 		E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */; };
 		E5A8F4F626AC98AE0093D4E5 /* DieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */; };
+		E5A8F4F826ACA19E0093D4E5 /* Room03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F726ACA19E0093D4E5 /* Room03ViewController.swift */; };
+		E5A8F4FA26ACA1B00093D4E5 /* Room04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4F926ACA1B00093D4E5 /* Room04ViewController.swift */; };
+		E5A8F4FC26ACA1BC0093D4E5 /* Room05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4FB26ACA1BC0093D4E5 /* Room05ViewController.swift */; };
+		E5A8F4FE26ACA1CA0093D4E5 /* Room06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4FD26ACA1CA0093D4E5 /* Room06ViewController.swift */; };
+		E5A8F50026ACA1D50093D4E5 /* Room07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F4FF26ACA1D50093D4E5 /* Room07ViewController.swift */; };
+		E5A8F50226ACA1E60093D4E5 /* Room08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */; };
+		E5A8F50426ACA2080093D4E5 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50326ACA2080093D4E5 /* EndViewController.swift */; };
+		E5A8F50826ACAEB80093D4E5 /* ElevatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */; };
 		E5FE214826AB724B00F1EE1C /* rexlia rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5FE214726AB724500F1EE1C /* rexlia rg.otf */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +41,14 @@
 		E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorTypeEnum.swift; sourceTree = "<group>"; };
 		E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room02ViewController.swift; sourceTree = "<group>"; };
 		E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieViewController.swift; sourceTree = "<group>"; };
+		E5A8F4F726ACA19E0093D4E5 /* Room03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room03ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4F926ACA1B00093D4E5 /* Room04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room04ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4FB26ACA1BC0093D4E5 /* Room05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room05ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4FD26ACA1CA0093D4E5 /* Room06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room06ViewController.swift; sourceTree = "<group>"; };
+		E5A8F4FF26ACA1D50093D4E5 /* Room07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room07ViewController.swift; sourceTree = "<group>"; };
+		E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room08ViewController.swift; sourceTree = "<group>"; };
+		E5A8F50326ACA2080093D4E5 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorViewController.swift; sourceTree = "<group>"; };
 		E5FE214726AB724500F1EE1C /* rexlia rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rexlia rg.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +102,14 @@
 				E5A8F4EE26AC85B20093D4E5 /* Room01ViewController.swift */,
 				E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */,
 				E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */,
+				E5A8F4F726ACA19E0093D4E5 /* Room03ViewController.swift */,
+				E5A8F4F926ACA1B00093D4E5 /* Room04ViewController.swift */,
+				E5A8F4FB26ACA1BC0093D4E5 /* Room05ViewController.swift */,
+				E5A8F4FD26ACA1CA0093D4E5 /* Room06ViewController.swift */,
+				E5A8F4FF26ACA1D50093D4E5 /* Room07ViewController.swift */,
+				E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */,
+				E5A8F50326ACA2080093D4E5 /* EndViewController.swift */,
+				E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,11 +203,19 @@
 			files = (
 				E555695126A894BC008C8E88 /* ViewController.swift in Sources */,
 				E555694D26A894BC008C8E88 /* AppDelegate.swift in Sources */,
+				E5A8F4FE26ACA1CA0093D4E5 /* Room06ViewController.swift in Sources */,
 				E5A8F4F226AC925A0093D4E5 /* DoorTypeEnum.swift in Sources */,
+				E5A8F4FA26ACA1B00093D4E5 /* Room04ViewController.swift in Sources */,
 				E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */,
+				E5A8F4F826ACA19E0093D4E5 /* Room03ViewController.swift in Sources */,
+				E5A8F50826ACAEB80093D4E5 /* ElevatorViewController.swift in Sources */,
+				E5A8F4FC26ACA1BC0093D4E5 /* Room05ViewController.swift in Sources */,
+				E5A8F50026ACA1D50093D4E5 /* Room07ViewController.swift in Sources */,
 				E5A8F4F626AC98AE0093D4E5 /* DieViewController.swift in Sources */,
+				E5A8F50426ACA2080093D4E5 /* EndViewController.swift in Sources */,
 				E5A8F4EF26AC85B20093D4E5 /* Room01ViewController.swift in Sources */,
 				E555694F26A894BC008C8E88 /* SceneDelegate.swift in Sources */,
+				E5A8F50226ACA1E60093D4E5 /* Room08ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
