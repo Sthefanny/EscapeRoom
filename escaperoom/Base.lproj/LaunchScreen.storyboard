@@ -7,11 +7,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="rexlia rg.otf">
-            <string>RexliaRg-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -25,20 +20,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escape Room: Live or Die!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-9r-aeb">
-                                <rect key="frame" x="151" y="20" width="595" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="40"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="l3Y-oR-VcC">
-                                <rect key="frame" x="203" y="76" width="491" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Logo e titulo" translatesAutoresizingMaskIntoConstraints="NO" id="l3Y-oR-VcC">
+                                <rect key="frame" x="156" y="11" width="584" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="596" id="9du-eL-2I0"/>
+                                    <constraint firstAttribute="height" constant="401" id="Zbl-hO-7Ot"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l3Y-oR-VcC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ry1-rW-yvs"/>
+                            <constraint firstItem="l3Y-oR-VcC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SfP-WF-9vj"/>
+                            <constraint firstItem="l3Y-oR-VcC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ck3-Sq-dHo"/>
+                            <constraint firstItem="l3Y-oR-VcC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="skZ-mq-CYN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,7 +45,7 @@
     </scenes>
     <resources>
         <image name="Background" width="1792" height="828"/>
-        <image name="Logo" width="982" height="660"/>
+        <image name="Logo e titulo" width="1190" height="756"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
