@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kc3-X8-99r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A6l-2a-CLR">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -16,7 +16,7 @@
         <!--01-->
         <scene sceneID="yo2-A2-z1C">
             <objects>
-                <viewController storyboardIdentifier="ViewController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kc3-X8-99r" userLabel="01" customClass="ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scene01ViewController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kc3-X8-99r" userLabel="01" customClass="Scene01ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VmS-FK-dQz">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
         <!--02-->
         <scene sceneID="1dE-Ec-kQy">
             <objects>
-                <viewController id="YMc-Lv-XrK" userLabel="02" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scene02ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YMc-Lv-XrK" userLabel="02" customClass="Scene02ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9QH-nx-AvE">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--03-->
         <scene sceneID="hGk-i5-dF5">
             <objects>
-                <viewController id="H9q-rI-jF4" userLabel="03" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scene03ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H9q-rI-jF4" userLabel="03" customClass="Scene03ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1b-0C-9t4">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@ Ele procurou em vários lugares, mas não conseguiu achar ninguém...</string>
         <!--05.1-->
         <scene sceneID="IUS-e9-EH3">
             <objects>
-                <viewController id="deZ-pS-0F1" userLabel="05.1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scene051ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="deZ-pS-0F1" userLabel="05.1" customClass="Scene051ViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNO-Oy-cxm">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +273,7 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Next"/>
                                 <connections>
-                                    <segue destination="zmq-jp-6NE" kind="showDetail" animates="NO" id="Q1g-vk-1ID"/>
+                                    <segue destination="zmq-jp-6NE" kind="showDetail" identifier="" animates="NO" id="Q1g-vk-1ID"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -782,6 +782,16 @@ Ass: morador do 102</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="gcH-ye-lQO" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="juM-EC-kyb" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fqs-Ma-7Q3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -789,8 +799,10 @@ Ass: morador do 102</string>
                     <navigationItem key="navigationItem" id="grj-3d-xPm"/>
                     <connections>
                         <outlet property="dieDoor" destination="4mU-P0-7b5" id="1L0-wh-L1W"/>
+                        <outlet property="dieDoorBig" destination="gcH-ye-lQO" id="Nh1-Mf-22a"/>
                         <outlet property="evacuationMap" destination="ZcW-iM-3wC" id="uK2-dv-ZFp"/>
                         <outlet property="liveDoor" destination="cM1-tf-Mgn" id="YM3-tN-2H6"/>
+                        <outlet property="liveDoorBig" destination="juM-EC-kyb" id="7tn-VM-qJy"/>
                         <outlet property="lockedDoorInfo" destination="kB3-G8-Ck6" id="TQ2-uu-uYH"/>
                         <outlet property="mapItem" destination="Feg-Rt-GuI" id="r1Y-cw-oYH"/>
                         <outlet property="noButton" destination="a76-gN-WIW" id="b5h-fG-sBt"/>
@@ -904,6 +916,16 @@ Ass: morador do 102</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-xA-fw2" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="XUB-TM-hIx" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IGh-Bc-dMG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -911,8 +933,10 @@ Ass: morador do 102</string>
                     <navigationItem key="navigationItem" id="J3f-jJ-dXI"/>
                     <connections>
                         <outlet property="dieDoor" destination="ezq-q0-srd" id="xfC-F3-IGr"/>
+                        <outlet property="dieDoorBig" destination="9cV-xA-fw2" id="2dH-To-FLx"/>
                         <outlet property="evacuationMap" destination="ruE-us-qTe" id="CMi-cU-aaa"/>
                         <outlet property="liveDoor" destination="2wY-6U-eZg" id="e0N-44-OQN"/>
+                        <outlet property="liveDoorBig" destination="XUB-TM-hIx" id="uNN-t5-luE"/>
                         <outlet property="lockedDoorInfo" destination="Y2c-8p-FTi" id="k1e-m9-Boo"/>
                         <outlet property="mapItem" destination="FdG-uJ-jiK" id="6d2-xD-P7q"/>
                         <outlet property="noButton" destination="Q5I-mK-5QN" id="uuy-8f-sr9"/>
@@ -1082,6 +1106,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-BV-ZdP" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="b7c-Gq-pKW" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jsn-AN-TjL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1089,8 +1123,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="VVm-j6-Ibj"/>
                     <connections>
                         <outlet property="dieDoor" destination="SfB-u0-rmg" id="iCa-bT-zyg"/>
+                        <outlet property="dieDoorBig" destination="lgq-BV-ZdP" id="7px-D9-Vup"/>
                         <outlet property="evacuationMap" destination="eYz-pO-VUm" id="EKs-pa-OQM"/>
                         <outlet property="liveDoor" destination="jSe-ji-zd5" id="BOx-hF-G7s"/>
+                        <outlet property="liveDoorBig" destination="b7c-Gq-pKW" id="6lb-qH-pqo"/>
                         <outlet property="lockedDoorInfo" destination="l1n-Nv-uU3" id="dRf-e5-Awc"/>
                         <outlet property="mapItem" destination="2nY-8c-uoZ" id="fvr-GE-Ww1"/>
                         <outlet property="noButton" destination="BCm-7T-Axb" id="gaU-A7-5Dv"/>
@@ -1204,6 +1240,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="Mtr-VQ-nlJ" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="TzS-3S-pAU" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DqK-jh-8Ek"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1211,8 +1257,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="A16-I6-Wgu"/>
                     <connections>
                         <outlet property="dieDoor" destination="z9e-b4-upv" id="Oq4-IF-5Yf"/>
+                        <outlet property="dieDoorBig" destination="Mtr-VQ-nlJ" id="pz1-Gm-HEH"/>
                         <outlet property="evacuationMap" destination="8nf-8s-CfV" id="aBz-VM-dEt"/>
                         <outlet property="liveDoor" destination="R3A-Kw-9bR" id="SCe-JZ-6V1"/>
+                        <outlet property="liveDoorBig" destination="TzS-3S-pAU" id="nK3-sQ-7YU"/>
                         <outlet property="lockedDoorInfo" destination="PDF-h7-MxU" id="uvV-2F-rRx"/>
                         <outlet property="mapItem" destination="3o0-0g-49N" id="tKL-z5-n5R"/>
                         <outlet property="noButton" destination="xbO-JP-0ym" id="Aii-vN-Mma"/>
@@ -1326,6 +1374,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-XK-NS8" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-fx-AgJ" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Cn-RQ-pbq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1333,8 +1391,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="0BN-kU-ohu"/>
                     <connections>
                         <outlet property="dieDoor" destination="GSf-gP-zgU" id="cai-DC-Wz0"/>
+                        <outlet property="dieDoorBig" destination="nZ0-XK-NS8" id="DcU-G7-cka"/>
                         <outlet property="evacuationMap" destination="XUV-V8-GAe" id="aNC-Ij-TNV"/>
                         <outlet property="liveDoor" destination="pzb-0J-SwM" id="Nrs-nd-sUc"/>
+                        <outlet property="liveDoorBig" destination="Si8-fx-AgJ" id="gla-HL-X3Y"/>
                         <outlet property="lockedDoorInfo" destination="hg1-r3-YWx" id="Qfc-Py-ZSy"/>
                         <outlet property="mapItem" destination="gRq-fG-pWj" id="odA-DM-FT7"/>
                         <outlet property="noButton" destination="p2J-bQ-5AD" id="EUB-pa-2sA"/>
@@ -1448,6 +1508,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-xh-xBy" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-CH-kSH" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5bW-VS-fCP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1455,8 +1525,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="YMB-gp-gFQ"/>
                     <connections>
                         <outlet property="dieDoor" destination="L8Y-XQ-WKF" id="H8P-6v-1N5"/>
+                        <outlet property="dieDoorBig" destination="F1X-xh-xBy" id="6bV-kJ-aNw"/>
                         <outlet property="evacuationMap" destination="kdi-Ka-qbL" id="ch3-yu-VyV"/>
                         <outlet property="liveDoor" destination="N9k-vC-iL8" id="QSe-Jj-QSh"/>
+                        <outlet property="liveDoorBig" destination="gkg-CH-kSH" id="qCQ-A5-G0v"/>
                         <outlet property="lockedDoorInfo" destination="ss2-nb-DyM" id="xVj-gk-9ll"/>
                         <outlet property="mapItem" destination="RzV-cd-XIn" id="ZEN-lM-qDe"/>
                         <outlet property="noButton" destination="hr4-Gc-63y" id="1ax-jG-Qos"/>
@@ -1570,6 +1642,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-21-qbx" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="Ts8-4E-3f0" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0sK-ax-8m1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1577,8 +1659,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="ibb-qH-9dX"/>
                     <connections>
                         <outlet property="dieDoor" destination="Bld-FM-4bF" id="gLN-uG-IHt"/>
+                        <outlet property="dieDoorBig" destination="8Et-21-qbx" id="URJ-5Q-kYt"/>
                         <outlet property="evacuationMap" destination="G0W-oy-0Kj" id="yLa-d5-6Qr"/>
                         <outlet property="liveDoor" destination="aOU-Fd-mSW" id="rs9-Pu-Xbc"/>
+                        <outlet property="liveDoorBig" destination="Ts8-4E-3f0" id="u7i-Os-A7v"/>
                         <outlet property="lockedDoorInfo" destination="lqq-7E-tQR" id="mSS-os-Vnx"/>
                         <outlet property="mapItem" destination="OnF-ud-1W2" id="n1f-fO-AyF"/>
                         <outlet property="noButton" destination="Qfe-xi-VM0" id="E2v-Ru-Xo4"/>
@@ -1692,6 +1776,16 @@ GAME OVER</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta morrer" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-pS-Khv" userLabel="Porta morrer grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Porta viver" translatesAutoresizingMaskIntoConstraints="NO" id="vrz-NH-sdg" userLabel="Porta viver grande">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cSS-ic-CnQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1699,8 +1793,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="BkW-Uk-VT9"/>
                     <connections>
                         <outlet property="dieDoor" destination="cQa-AR-IQ1" id="ky3-BV-J9G"/>
+                        <outlet property="dieDoorBig" destination="2C5-pS-Khv" id="3Ng-Gn-eOR"/>
                         <outlet property="evacuationMap" destination="n7Q-k6-x4q" id="H4Y-Jf-pC6"/>
                         <outlet property="liveDoor" destination="dZ7-c8-EIe" id="o7r-0A-2D9"/>
+                        <outlet property="liveDoorBig" destination="vrz-NH-sdg" id="66P-fL-eJh"/>
                         <outlet property="lockedDoorInfo" destination="hYM-OJ-cg1" id="7om-LV-GEE"/>
                         <outlet property="mapItem" destination="ljT-Fd-X0s" id="C75-Hw-iHn"/>
                         <outlet property="noButton" destination="Loa-xD-jkz" id="YuX-Kk-54L"/>
@@ -1758,7 +1854,7 @@ Aguarde as próximas instruções para o próximo jogo...</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fK3-Uw-crL"/>
+        <segue reference="2ts-Ns-2OD"/>
         <segue reference="AFc-yT-Yc9"/>
     </inferredMetricsTieBreakers>
     <resources>

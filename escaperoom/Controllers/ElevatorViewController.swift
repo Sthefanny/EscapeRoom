@@ -13,9 +13,12 @@ class ElevatorViewController: UIViewController {
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
     var hasMap: Bool = false
+    var playSound: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PlaySounds()
     }
     
     @IBAction func ShowConfirmMessage(_ sender: Any) {
@@ -39,5 +42,12 @@ class ElevatorViewController: UIViewController {
         self.confirmationMessage.alpha = 0
         self.yesButton.alpha = 0
         self.noButton.alpha = 0
+    }
+    
+    func PlaySounds() {
+        if playSound {
+            AudioController.stopAudio()
+            AudioController.playAudio(name: "elevator")
+        }
     }
 }

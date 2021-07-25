@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E555694D26A894BC008C8E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555694C26A894BC008C8E88 /* AppDelegate.swift */; };
 		E555694F26A894BC008C8E88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555694E26A894BC008C8E88 /* SceneDelegate.swift */; };
-		E555695126A894BC008C8E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555695026A894BC008C8E88 /* ViewController.swift */; };
+		E555695126A894BC008C8E88 /* Scene01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555695026A894BC008C8E88 /* Scene01ViewController.swift */; };
 		E555695426A894BC008C8E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E555695226A894BC008C8E88 /* Main.storyboard */; };
 		E555695626A894BE008C8E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E555695526A894BE008C8E88 /* Assets.xcassets */; };
 		E555695926A894BE008C8E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E555695726A894BE008C8E88 /* LaunchScreen.storyboard */; };
@@ -27,6 +27,18 @@
 		E5A8F50826ACAEB80093D4E5 /* ElevatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */; };
 		E5A8F50A26ADB9E30093D4E5 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */; };
 		E5A8F50C26ADC0770093D4E5 /* PaperTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */; };
+		E5A8F50E26AE06070093D4E5 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50D26AE06070093D4E5 /* AudioController.swift */; };
+		E5A8F51726AE08270093D4E5 /* door.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51026AE08260093D4E5 /* door.wav */; };
+		E5A8F51826AE08270093D4E5 /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51126AE08260093D4E5 /* laser.wav */; };
+		E5A8F51926AE08270093D4E5 /* city.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51226AE08260093D4E5 /* city.wav */; };
+		E5A8F51A26AE08270093D4E5 /* toilet flush.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51326AE08270093D4E5 /* toilet flush.wav */; };
+		E5A8F51B26AE08270093D4E5 /* screen.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51426AE08270093D4E5 /* screen.wav */; };
+		E5A8F51C26AE08270093D4E5 /* shower water.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51526AE08270093D4E5 /* shower water.wav */; };
+		E5A8F51D26AE08270093D4E5 /* paper.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F51626AE08270093D4E5 /* paper.wav */; };
+		E5A8F51F26AE0EBC0093D4E5 /* Scene02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F51E26AE0EBC0093D4E5 /* Scene02ViewController.swift */; };
+		E5A8F52126AE0F030093D4E5 /* Scene03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F52026AE0F030093D4E5 /* Scene03ViewController.swift */; };
+		E5A8F52326AE12180093D4E5 /* Scene051ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F52226AE12180093D4E5 /* Scene051ViewController.swift */; };
+		E5A8F52526AE194F0093D4E5 /* elevator.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A8F52426AE194F0093D4E5 /* elevator.wav */; };
 		E5FE214826AB724B00F1EE1C /* rexlia rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5FE214726AB724500F1EE1C /* rexlia rg.otf */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +46,7 @@
 		E555694926A894BC008C8E88 /* escaperoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = escaperoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E555694C26A894BC008C8E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E555694E26A894BC008C8E88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E555695026A894BC008C8E88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E555695026A894BC008C8E88 /* Scene01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene01ViewController.swift; sourceTree = "<group>"; };
 		E555695326A894BC008C8E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E555695526A894BE008C8E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E555695826A894BE008C8E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +65,18 @@
 		E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorViewController.swift; sourceTree = "<group>"; };
 		E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
 		E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperTypeEnum.swift; sourceTree = "<group>"; };
+		E5A8F50D26AE06070093D4E5 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		E5A8F51026AE08260093D4E5 /* door.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = door.wav; sourceTree = "<group>"; };
+		E5A8F51126AE08260093D4E5 /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
+		E5A8F51226AE08260093D4E5 /* city.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = city.wav; sourceTree = "<group>"; };
+		E5A8F51326AE08270093D4E5 /* toilet flush.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "toilet flush.wav"; sourceTree = "<group>"; };
+		E5A8F51426AE08270093D4E5 /* screen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = screen.wav; sourceTree = "<group>"; };
+		E5A8F51526AE08270093D4E5 /* shower water.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "shower water.wav"; sourceTree = "<group>"; };
+		E5A8F51626AE08270093D4E5 /* paper.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = paper.wav; sourceTree = "<group>"; };
+		E5A8F51E26AE0EBC0093D4E5 /* Scene02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene02ViewController.swift; sourceTree = "<group>"; };
+		E5A8F52026AE0F030093D4E5 /* Scene03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene03ViewController.swift; sourceTree = "<group>"; };
+		E5A8F52226AE12180093D4E5 /* Scene051ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene051ViewController.swift; sourceTree = "<group>"; };
+		E5A8F52426AE194F0093D4E5 /* elevator.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elevator.wav; sourceTree = "<group>"; };
 		E5FE214726AB724500F1EE1C /* rexlia rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rexlia rg.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +110,7 @@
 		E555694B26A894BC008C8E88 /* escaperoom */ = {
 			isa = PBXGroup;
 			children = (
+				E5A8F50F26AE072E0093D4E5 /* Sounds */,
 				E5A8F4F026AC92430093D4E5 /* Models */,
 				E5A8F4ED26AC85880093D4E5 /* Controllers */,
 				E5FE214626AB721E00F1EE1C /* Fonts */,
@@ -102,19 +127,23 @@
 		E5A8F4ED26AC85880093D4E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E555695026A894BC008C8E88 /* ViewController.swift */,
+				E555695026A894BC008C8E88 /* Scene01ViewController.swift */,
+				E5A8F51E26AE0EBC0093D4E5 /* Scene02ViewController.swift */,
+				E5A8F52026AE0F030093D4E5 /* Scene03ViewController.swift */,
+				E5A8F52226AE12180093D4E5 /* Scene051ViewController.swift */,
 				E5A8F4EE26AC85B20093D4E5 /* Room01ViewController.swift */,
 				E5A8F4F326AC949F0093D4E5 /* Room02ViewController.swift */,
-				E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */,
 				E5A8F4F726ACA19E0093D4E5 /* Room03ViewController.swift */,
 				E5A8F4F926ACA1B00093D4E5 /* Room04ViewController.swift */,
 				E5A8F4FB26ACA1BC0093D4E5 /* Room05ViewController.swift */,
 				E5A8F4FD26ACA1CA0093D4E5 /* Room06ViewController.swift */,
 				E5A8F4FF26ACA1D50093D4E5 /* Room07ViewController.swift */,
 				E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */,
+				E5A8F4F526AC98AE0093D4E5 /* DieViewController.swift */,
 				E5A8F50326ACA2080093D4E5 /* EndViewController.swift */,
 				E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */,
 				E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */,
+				E5A8F50D26AE06070093D4E5 /* AudioController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +155,21 @@
 				E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E5A8F50F26AE072E0093D4E5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E5A8F52426AE194F0093D4E5 /* elevator.wav */,
+				E5A8F51226AE08260093D4E5 /* city.wav */,
+				E5A8F51026AE08260093D4E5 /* door.wav */,
+				E5A8F51126AE08260093D4E5 /* laser.wav */,
+				E5A8F51626AE08270093D4E5 /* paper.wav */,
+				E5A8F51426AE08270093D4E5 /* screen.wav */,
+				E5A8F51526AE08270093D4E5 /* shower water.wav */,
+				E5A8F51326AE08270093D4E5 /* toilet flush.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		E5FE214626AB721E00F1EE1C /* Fonts */ = {
@@ -193,10 +237,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A8F51726AE08270093D4E5 /* door.wav in Resources */,
+				E5A8F51C26AE08270093D4E5 /* shower water.wav in Resources */,
+				E5A8F52526AE194F0093D4E5 /* elevator.wav in Resources */,
+				E5A8F51926AE08270093D4E5 /* city.wav in Resources */,
+				E5A8F51B26AE08270093D4E5 /* screen.wav in Resources */,
 				E555695926A894BE008C8E88 /* LaunchScreen.storyboard in Resources */,
+				E5A8F51D26AE08270093D4E5 /* paper.wav in Resources */,
+				E5A8F51826AE08270093D4E5 /* laser.wav in Resources */,
 				E555695626A894BE008C8E88 /* Assets.xcassets in Resources */,
 				E5FE214826AB724B00F1EE1C /* rexlia rg.otf in Resources */,
 				E555695426A894BC008C8E88 /* Main.storyboard in Resources */,
+				E5A8F51A26AE08270093D4E5 /* toilet flush.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E555695126A894BC008C8E88 /* ViewController.swift in Sources */,
+				E555695126A894BC008C8E88 /* Scene01ViewController.swift in Sources */,
 				E5A8F50C26ADC0770093D4E5 /* PaperTypeEnum.swift in Sources */,
 				E555694D26A894BC008C8E88 /* AppDelegate.swift in Sources */,
 				E5A8F4FE26ACA1CA0093D4E5 /* Room06ViewController.swift in Sources */,
@@ -217,12 +269,16 @@
 				E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */,
 				E5A8F4F826ACA19E0093D4E5 /* Room03ViewController.swift in Sources */,
 				E5A8F50826ACAEB80093D4E5 /* ElevatorViewController.swift in Sources */,
+				E5A8F50E26AE06070093D4E5 /* AudioController.swift in Sources */,
 				E5A8F4FC26ACA1BC0093D4E5 /* Room05ViewController.swift in Sources */,
+				E5A8F51F26AE0EBC0093D4E5 /* Scene02ViewController.swift in Sources */,
 				E5A8F50026ACA1D50093D4E5 /* Room07ViewController.swift in Sources */,
+				E5A8F52126AE0F030093D4E5 /* Scene03ViewController.swift in Sources */,
 				E5A8F4F626AC98AE0093D4E5 /* DieViewController.swift in Sources */,
 				E5A8F50426ACA2080093D4E5 /* EndViewController.swift in Sources */,
 				E5A8F4EF26AC85B20093D4E5 /* Room01ViewController.swift in Sources */,
 				E555694F26A894BC008C8E88 /* SceneDelegate.swift in Sources */,
+				E5A8F52326AE12180093D4E5 /* Scene051ViewController.swift in Sources */,
 				E5A8F50226ACA1E60093D4E5 /* Room08ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

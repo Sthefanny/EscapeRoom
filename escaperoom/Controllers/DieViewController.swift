@@ -11,5 +11,8 @@ import UIKit
 class DieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        AudioController.stopAudio()
+        AudioController.playAudio(name: "laser")
     }
 }

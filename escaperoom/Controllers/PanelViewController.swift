@@ -28,6 +28,8 @@ class PanelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        AudioController.stopAudio()
     }
     
     @IBAction func ShowGameRules(_ sender: Any) {
@@ -68,6 +70,7 @@ class PanelViewController: UIViewController {
     @IBAction func TakeButtonAction(_ sender: Any) {
         if self.actualPaper != nil {
             if self.actualPaper == .evacuationMap {
+                PlaySounds()
                 self.mapTaken = true
                 self.evacuationMapButton.alpha = 0
                 showTakeMessage()
@@ -112,6 +115,12 @@ class PanelViewController: UIViewController {
         if(segue.identifier == "BackToCorridor"){
             let destination = segue.destination as! ElevatorViewController
             destination.hasMap = self.mapTaken
+            destination.playSound = false
         }
+    }
+    
+    func PlaySounds() {
+        AudioController.stopAudio()
+        AudioController.playAudio(name: "paper")
     }
 }

@@ -16,6 +16,8 @@ class Room08ViewController: UIViewController {
     @IBOutlet weak var noButton: UIButton!
     @IBOutlet weak var mapItem: UIButton!
     @IBOutlet weak var evacuationMap: UIImageView!
+    @IBOutlet weak var dieDoorBig: UIImageView!
+    @IBOutlet weak var liveDoorBig: UIImageView!
     var actualDoor: DoorType?
     let nextSceneName: String = "EndViewController"
     let dieSceneName: String = "DieViewController"
@@ -25,6 +27,7 @@ class Room08ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ShowMapItem()
+        AudioController.stopAudio()
     }
     
     @IBAction func showLockedDoorInfo(_ sender: UIButton) {
@@ -54,11 +57,18 @@ class Room08ViewController: UIViewController {
     
     @IBAction func yesButtonAction(_ sender: Any) {
         if self.actualDoor != nil {
-            let nextScene = self.actualDoor == rightDoor ? nextSceneName : dieSceneName
             
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: nextScene)
-            self.present(newViewController, animated: false, completion: nil)
+            self.PlaySounds()
+            
+            self.showOnlyDoor()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                let nextScene = self.actualDoor == self.rightDoor ? self.nextSceneName : self.dieSceneName
+                
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: nextScene)
+                self.present(newViewController, animated: false, completion: nil)
+            }
         }
     }
     
@@ -90,5 +100,21 @@ class Room08ViewController: UIViewController {
         self.dieDoor.alpha = 0
         self.yesButton.alpha = 0
         self.noButton.alpha = 0
+    }
+    
+    func showOnlyDoor() {
+        switch self.actualDoor {
+        case .die:
+            self.dieDoorBig.alpha = 1
+        case .live:
+            self.liveDoorBig.alpha = 1
+        default:
+            print("")
+        }
+    }
+    
+    func PlaySounds() {
+        AudioController.stopAudio()
+        AudioController.playAudio(name: "door")
     }
 }
