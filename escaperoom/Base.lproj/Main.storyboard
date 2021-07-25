@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A6l-2a-CLR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kc3-X8-99r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -378,7 +378,7 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
         <!--Corridor-->
         <scene sceneID="Xco-hy-vsY">
             <objects>
-                <viewController id="A6l-2a-CLR" userLabel="Corridor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ElevatorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A6l-2a-CLR" userLabel="Corridor" customClass="ElevatorViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWs-Sj-JzO">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,23 +388,64 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Corredor" translatesAutoresizingMaskIntoConstraints="NO" id="iuu-8F-IrD">
-                                <rect key="frame" x="196" y="-10" width="505" height="435"/>
+                                <rect key="frame" x="155" y="-10" width="505" height="435"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-1u-m9k" userLabel="Elevador">
-                                <rect key="frame" x="384" y="6" width="129" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Elevador"/>
-                                <connections>
-                                    <segue destination="U0n-eP-Wh9" kind="showDetail" animates="NO" id="DX8-xV-ah4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEM-e7-iCo" userLabel="Mural">
-                                <rect key="frame" x="536" y="153" width="26" height="109"/>
+                                <rect key="frame" x="495" y="153" width="26" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Mural"/>
                                 <connections>
                                     <segue destination="pcI-0W-IKR" kind="show" animates="NO" id="Xcf-EU-gSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-1u-m9k" userLabel="Elevador">
+                                <rect key="frame" x="343" y="6" width="129" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Elevador"/>
+                                <connections>
+                                    <action selector="ShowConfirmMessage:" destination="A6l-2a-CLR" eventType="touchUpInside" id="bwD-cc-LbH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-na-EDY">
+                                <rect key="frame" x="555" y="20" width="301" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Tem certeza que quer entrar no elevador?
+
+Não será mais possível voltar...</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGH-1C-F79">
+                                <rect key="frame" x="555" y="246" width="266" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Sim, já explorei tudo! ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="YesButtonAction:" destination="A6l-2a-CLR" eventType="touchUpInside" id="QDz-25-Ce8"/>
+                                    <action selector="yesButtonAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="OYQ-jv-azk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoB-0F-AF1">
+                                <rect key="frame" x="555" y="313" width="161" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Ainda não... ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NoButtonAction:" destination="A6l-2a-CLR" eventType="touchUpInside" id="TCz-Ff-VkG"/>
+                                    <action selector="noButtonAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="Zd9-LP-4qs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -412,15 +453,20 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="T2b-2J-Le2"/>
+                    <connections>
+                        <outlet property="confirmationMessage" destination="D4T-na-EDY" id="qpr-No-weE"/>
+                        <outlet property="noButton" destination="KoB-0F-AF1" id="Tt7-Pc-5wW"/>
+                        <outlet property="yesButton" destination="kGH-1C-F79" id="aqm-AN-p5A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4u-J8-m99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="2787"/>
+            <point key="canvasLocation" x="1506.6964285714284" y="2786.9565217391305"/>
         </scene>
         <!--Opened Panel-->
         <scene sceneID="jmK-JT-aFB">
             <objects>
-                <viewController id="pcI-0W-IKR" userLabel="Opened Panel" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PanelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pcI-0W-IKR" userLabel="Opened Panel" customClass="PanelViewController" customModule="escaperoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlQ-5j-ZrH">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,43 +485,199 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                 <state key="normal" title="Button" image="Back"/>
                                 <connections>
-                                    <segue destination="A6l-2a-CLR" kind="showDetail" animates="NO" id="fK3-Uw-crL"/>
+                                    <segue destination="A6l-2a-CLR" kind="showDetail" identifier="BackToCorridor" animates="NO" id="fK3-Uw-crL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-ZC-Bn6" userLabel="Papel grande">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-ZC-Bn6" userLabel="gameRulesButton">
                                 <rect key="frame" x="399" y="175" width="114.5" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Papel grande"/>
+                                <connections>
+                                    <action selector="ShowGameRules:" destination="pcI-0W-IKR" eventType="touchUpInside" id="48Z-UY-Po3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-jv-GSe" userLabel="Papel grande">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-jv-GSe" userLabel="evacuationMapButton">
                                 <rect key="frame" x="557" y="68" width="114.5" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Papel grande"/>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="pcI-0W-IKR" eventType="touchUpInside" id="Jwd-aT-NQG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-C2-B6N" userLabel="Papel pequeno">
-                                <rect key="frame" x="588" y="265" width="74.5" height="45.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Papel pequeno"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfX-Yl-JeL" userLabel="Papel pequeno">
-                                <rect key="frame" x="242" y="304" width="74.5" height="45.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Papel pequeno"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwp-QB-wLe" userLabel="Papel grande">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwp-QB-wLe" userLabel="buildingRulesButton">
                                 <rect key="frame" x="242" y="51" width="114.5" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Papel grande"/>
+                                <connections>
+                                    <action selector="ShowBuildingRules:" destination="pcI-0W-IKR" eventType="touchUpInside" id="p8O-dr-MXS"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfX-Yl-JeL" userLabel="message01">
+                                <rect key="frame" x="242" y="304" width="74.5" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel pequeno"/>
+                                <connections>
+                                    <action selector="ShowMessage01:" destination="pcI-0W-IKR" eventType="touchUpInside" id="Wh9-gb-Iaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-C2-B6N" userLabel="message02">
+                                <rect key="frame" x="588" y="265" width="74.5" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Papel pequeno"/>
+                                <connections>
+                                    <action selector="ShowMessage02:" destination="pcI-0W-IKR" eventType="touchUpInside" id="DCF-uT-mGL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYt-Bt-L1D">
+                                <rect key="frame" x="718" y="84" width="101" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Pegar ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TakeButtonAction:" destination="pcI-0W-IKR" eventType="touchUpInside" id="FzF-6p-aWi"/>
+                                    <action selector="yesButtonAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="I6D-Jl-cMA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0N-ma-TGm">
+                                <rect key="frame" x="718" y="140" width="132" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title=" &gt; Deixar aí ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftButtonAction:" destination="pcI-0W-IKR" eventType="touchUpInside" id="qo9-9y-rfK"/>
+                                    <action selector="noButtonAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="K14-IY-QwU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBn-03-DJX" userLabel="Regras Text">
+                                <rect key="frame" x="223" y="43" width="450" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Regras do Jogo
+
+1 - Após entrar pelo elevador não será mais possível voltar.
+
+2 - Cada sala tem 2 portas a serem escolhidas, uma escrita ”viver” e outra ”morrer”.
+
+3 - Se você escolher a porta errada, você será atingido por um ”laser” e morrerá instantaneamente.
+
+4 - Seu objetivo é sair do prédio.
+
+5 - Seu prêmio será uma carta de nível 3, que lhe garantirá essa quantidade de dias de vida - até que você tenha que participar de outro jogo.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="jqY-Lr-kQZ">
+                                <rect key="frame" x="223" y="36" width="456" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="418-TV-MB0" userLabel="Regras Condomínio Text">
+                                <rect key="frame" x="223" y="43" width="450" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">Regras de condomínio
+
+1 - Não utilizar o elevador sem blusa ou com trajes de banho.
+
+2 - Não fazer barulho alto após às 22h.
+
+3 - Não emprestar a garagem para pessoa estranha ao prédio.
+
+4 - Recolher dejetos de seus animais quando for passear com ele nas proximidades do prédio.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQm-U1-JKU" userLabel="Recado01 Text">
+                                <rect key="frame" x="223" y="43" width="456" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">
+
+
+Vizinho do apartamento 204, por favor pare de fazer comidas cheirosas, pois não sei cozinhar bem e fico com fome =/
+
+Ass: morador do 203</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YU-PG-w1h" userLabel="Recado02 Text">
+                                <rect key="frame" x="223" y="43" width="456" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <string key="text">
+
+
+Quem quiser estou alugando minha vaga de garagem por  R$100 por mês
+
+Ass: morador do 102</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text=" Não preciso disso..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqx-A5-gmZ" userLabel="dont take Text">
+                                <rect key="frame" x="355" y="189" width="185" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Vou guardar isso no meu bolso..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPS-N3-JNZ" userLabel="take Text">
+                                <rect key="frame" x="355" y="180" width="185" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.67450982329999998" green="0.55686277149999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RexliaRg-Regular" family="Rexlia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vdQ-bw-yvo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="j4C-nf-zgg"/>
+                    <connections>
+                        <outlet property="buildingRules" destination="418-TV-MB0" id="gJz-4S-36J"/>
+                        <outlet property="buildingRulesButton" destination="uwp-QB-wLe" id="89Z-Xz-PwI"/>
+                        <outlet property="dontTakeMessage" destination="qqx-A5-gmZ" id="O9A-wG-jf2"/>
+                        <outlet property="evacuationMap" destination="jqY-Lr-kQZ" id="00m-4D-CeR"/>
+                        <outlet property="evacuationMapButton" destination="8DS-jv-GSe" id="nbq-YG-zRs"/>
+                        <outlet property="gameRules" destination="nBn-03-DJX" id="agI-Nb-heb"/>
+                        <outlet property="gameRulesButton" destination="ODg-ZC-Bn6" id="g8i-SN-mp9"/>
+                        <outlet property="leftButton" destination="f0N-ma-TGm" id="Y2T-de-DkP"/>
+                        <outlet property="message01" destination="vQm-U1-JKU" id="pxW-SS-udv"/>
+                        <outlet property="message01Button" destination="MfX-Yl-JeL" id="cSn-Cx-08g"/>
+                        <outlet property="message02" destination="3YU-PG-w1h" id="fso-M0-s1B"/>
+                        <outlet property="message02Button" destination="KjJ-C2-B6N" id="R5h-Q0-5C1"/>
+                        <outlet property="takeButton" destination="xYt-Bt-L1D" id="k7r-XQ-S5T"/>
+                        <outlet property="takeMessage" destination="HPS-N3-JNZ" id="gfD-vg-oan"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSD-F0-4Dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="2787"/>
+            <point key="canvasLocation" x="2185.7142857142858" y="2786.9565217391305"/>
         </scene>
         <!--Room 01-->
         <scene sceneID="Kc2-0r-MAx">
@@ -565,6 +767,21 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                     <action selector="noButtonAction:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="9bV-Ci-DLV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feg-Rt-GuI" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="U0n-eP-Wh9" eventType="touchUpInside" id="aSN-E7-PW7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="ZcW-iM-3wC">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fqs-Ma-7Q3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -572,8 +789,10 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                     <navigationItem key="navigationItem" id="grj-3d-xPm"/>
                     <connections>
                         <outlet property="dieDoor" destination="4mU-P0-7b5" id="1L0-wh-L1W"/>
+                        <outlet property="evacuationMap" destination="ZcW-iM-3wC" id="uK2-dv-ZFp"/>
                         <outlet property="liveDoor" destination="cM1-tf-Mgn" id="YM3-tN-2H6"/>
                         <outlet property="lockedDoorInfo" destination="kB3-G8-Ck6" id="TQ2-uu-uYH"/>
+                        <outlet property="mapItem" destination="Feg-Rt-GuI" id="r1Y-cw-oYH"/>
                         <outlet property="noButton" destination="a76-gN-WIW" id="b5h-fG-sBt"/>
                         <outlet property="yesButton" destination="6xX-ww-jEd" id="aZ9-dV-UzC"/>
                     </connections>
@@ -622,6 +841,10 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                     <action selector="liveDoorAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="3wL-PA-Lq0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-P2-bqi">
+                                <rect key="frame" x="380" y="51" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2c-8p-FTi">
                                 <rect key="frame" x="648" y="64" width="203" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -666,9 +889,20 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                                     <action selector="noButtonAction:" destination="fzp-T9-9ek" eventType="touchUpInside" id="4FD-kz-cxO"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-P2-bqi">
-                                <rect key="frame" x="380" y="51" width="33" height="102"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdG-uJ-jiK" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="fzp-T9-9ek" eventType="touchUpInside" id="vo5-s3-Wfb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="ruE-us-qTe">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IGh-Bc-dMG"/>
@@ -677,8 +911,10 @@ DIRIJA-SE ATÉ A ARENA PARA RECEBER AS INSTRUÇÕES!</string>
                     <navigationItem key="navigationItem" id="J3f-jJ-dXI"/>
                     <connections>
                         <outlet property="dieDoor" destination="ezq-q0-srd" id="xfC-F3-IGr"/>
+                        <outlet property="evacuationMap" destination="ruE-us-qTe" id="CMi-cU-aaa"/>
                         <outlet property="liveDoor" destination="2wY-6U-eZg" id="e0N-44-OQN"/>
                         <outlet property="lockedDoorInfo" destination="Y2c-8p-FTi" id="k1e-m9-Boo"/>
+                        <outlet property="mapItem" destination="FdG-uJ-jiK" id="6d2-xD-P7q"/>
                         <outlet property="noButton" destination="Q5I-mK-5QN" id="uuy-8f-sr9"/>
                         <outlet property="yesButton" destination="2x1-J9-Bcs" id="VlI-zd-GtF"/>
                     </connections>
@@ -741,7 +977,7 @@ GAME OVER</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk8-eZ-WBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3108" y="2787"/>
+            <point key="canvasLocation" x="3065" y="1888"/>
         </scene>
         <!--Room 03-->
         <scene sceneID="erw-zl-YBT">
@@ -783,6 +1019,10 @@ GAME OVER</string>
                                     <action selector="liveDoorAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="DG0-yj-Tjs"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="VYM-od-D2N">
+                                <rect key="frame" x="410" y="70" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-Nv-uU3">
                                 <rect key="frame" x="648" y="64" width="203" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -827,9 +1067,20 @@ GAME OVER</string>
                                     <action selector="noButtonAction:" destination="cZD-yd-C7F" eventType="touchUpInside" id="Okg-tC-8iL"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="VYM-od-D2N">
-                                <rect key="frame" x="410" y="70" width="33" height="102"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-8c-uoZ" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="cZD-yd-C7F" eventType="touchUpInside" id="rDQ-Ah-Abo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="eYz-pO-VUm">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jsn-AN-TjL"/>
@@ -838,8 +1089,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="VVm-j6-Ibj"/>
                     <connections>
                         <outlet property="dieDoor" destination="SfB-u0-rmg" id="iCa-bT-zyg"/>
+                        <outlet property="evacuationMap" destination="eYz-pO-VUm" id="EKs-pa-OQM"/>
                         <outlet property="liveDoor" destination="jSe-ji-zd5" id="BOx-hF-G7s"/>
                         <outlet property="lockedDoorInfo" destination="l1n-Nv-uU3" id="dRf-e5-Awc"/>
+                        <outlet property="mapItem" destination="2nY-8c-uoZ" id="fvr-GE-Ww1"/>
                         <outlet property="noButton" destination="BCm-7T-Axb" id="gaU-A7-5Dv"/>
                         <outlet property="yesButton" destination="p1m-vv-CD3" id="Gpw-nH-Vdg"/>
                     </connections>
@@ -878,6 +1131,14 @@ GAME OVER</string>
                                 <state key="normal" title="Button" image="Porta verde"/>
                                 <connections>
                                     <action selector="dieDoorAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="uQ7-Mk-e39"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjs-ZC-v9t" userLabel="Porta viver">
+                                <rect key="frame" x="354" y="44" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <connections>
+                                    <action selector="liveDoorAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="2LS-m1-6zQ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="LVp-gZ-pHI">
@@ -928,14 +1189,21 @@ GAME OVER</string>
                                     <action selector="noButtonAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="wUI-bv-cVK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjs-ZC-v9t" userLabel="Porta viver">
-                                <rect key="frame" x="354" y="44" width="84" height="24"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o0-0g-49N" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Porta verde h"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="liveDoorAction:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="2LS-m1-6zQ"/>
+                                    <action selector="ShowEvacuationMap:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="BfD-wr-Bh0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="8nf-8s-CfV">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DqK-jh-8Ek"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -943,8 +1211,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="A16-I6-Wgu"/>
                     <connections>
                         <outlet property="dieDoor" destination="z9e-b4-upv" id="Oq4-IF-5Yf"/>
+                        <outlet property="evacuationMap" destination="8nf-8s-CfV" id="aBz-VM-dEt"/>
                         <outlet property="liveDoor" destination="R3A-Kw-9bR" id="SCe-JZ-6V1"/>
                         <outlet property="lockedDoorInfo" destination="PDF-h7-MxU" id="uvV-2F-rRx"/>
+                        <outlet property="mapItem" destination="3o0-0g-49N" id="tKL-z5-n5R"/>
                         <outlet property="noButton" destination="xbO-JP-0ym" id="Aii-vN-Mma"/>
                         <outlet property="yesButton" destination="Ohl-JX-JFe" id="wk4-fc-yEK"/>
                     </connections>
@@ -1041,6 +1311,21 @@ GAME OVER</string>
                                     <action selector="showLockedDoorInfo:" destination="nmi-Ob-9BE" eventType="touchUpInside" id="vu8-Z4-9NV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRq-fG-pWj" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="ezQ-Mg-y7r" eventType="touchUpInside" id="2aZ-mm-UTN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-V8-GAe">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Cn-RQ-pbq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1048,8 +1333,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="0BN-kU-ohu"/>
                     <connections>
                         <outlet property="dieDoor" destination="GSf-gP-zgU" id="cai-DC-Wz0"/>
+                        <outlet property="evacuationMap" destination="XUV-V8-GAe" id="aNC-Ij-TNV"/>
                         <outlet property="liveDoor" destination="pzb-0J-SwM" id="Nrs-nd-sUc"/>
                         <outlet property="lockedDoorInfo" destination="hg1-r3-YWx" id="Qfc-Py-ZSy"/>
+                        <outlet property="mapItem" destination="gRq-fG-pWj" id="odA-DM-FT7"/>
                         <outlet property="noButton" destination="p2J-bQ-5AD" id="EUB-pa-2sA"/>
                         <outlet property="yesButton" destination="RAe-ll-SYp" id="Wlw-E8-OkM"/>
                     </connections>
@@ -1074,6 +1361,14 @@ GAME OVER</string>
                                 <rect key="frame" x="163" y="39" width="467" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcV-K0-hRl" userLabel="Porta entrada">
+                                <rect key="frame" x="358" y="346" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="soF-Qi-ate"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6k-Ah-dY4" userLabel="Porta morrer">
                                 <rect key="frame" x="579" y="141" width="24" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1138,14 +1433,21 @@ GAME OVER</string>
                                     <action selector="noButtonAction:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="BF2-TG-sSB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcV-K0-hRl" userLabel="Porta entrada">
-                                <rect key="frame" x="358" y="346" width="76" height="24"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-cd-XIn" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Porta vermelha h"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="showLockedDoorInfo:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="soF-Qi-ate"/>
+                                    <action selector="ShowEvacuationMap:" destination="1h3-Wa-oiG" eventType="touchUpInside" id="GzH-Eg-1Fe"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Ka-qbL">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5bW-VS-fCP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1153,8 +1455,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="YMB-gp-gFQ"/>
                     <connections>
                         <outlet property="dieDoor" destination="L8Y-XQ-WKF" id="H8P-6v-1N5"/>
+                        <outlet property="evacuationMap" destination="kdi-Ka-qbL" id="ch3-yu-VyV"/>
                         <outlet property="liveDoor" destination="N9k-vC-iL8" id="QSe-Jj-QSh"/>
                         <outlet property="lockedDoorInfo" destination="ss2-nb-DyM" id="xVj-gk-9ll"/>
+                        <outlet property="mapItem" destination="RzV-cd-XIn" id="ZEN-lM-qDe"/>
                         <outlet property="noButton" destination="hr4-Gc-63y" id="1ax-jG-Qos"/>
                         <outlet property="yesButton" destination="2ze-pI-oy1" id="EHl-sf-Xkn"/>
                     </connections>
@@ -1203,6 +1507,10 @@ GAME OVER</string>
                                     <action selector="liveDoorAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="K6R-MN-dxX"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-y5-AiX">
+                                <rect key="frame" x="380" y="231" width="33" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Porta trancada" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-7E-tQR">
                                 <rect key="frame" x="648" y="64" width="203" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1247,9 +1555,20 @@ GAME OVER</string>
                                     <action selector="noButtonAction:" destination="Dvb-02-bcn" eventType="touchUpInside" id="z00-4X-PnH"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Personagem" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-y5-AiX">
-                                <rect key="frame" x="380" y="231" width="33" height="102"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-ud-1W2" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowEvacuationMap:" destination="Dvb-02-bcn" eventType="touchUpInside" id="meg-aP-5ZA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="G0W-oy-0Kj">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0sK-ax-8m1"/>
@@ -1258,8 +1577,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="ibb-qH-9dX"/>
                     <connections>
                         <outlet property="dieDoor" destination="Bld-FM-4bF" id="gLN-uG-IHt"/>
+                        <outlet property="evacuationMap" destination="G0W-oy-0Kj" id="yLa-d5-6Qr"/>
                         <outlet property="liveDoor" destination="aOU-Fd-mSW" id="rs9-Pu-Xbc"/>
                         <outlet property="lockedDoorInfo" destination="lqq-7E-tQR" id="mSS-os-Vnx"/>
+                        <outlet property="mapItem" destination="OnF-ud-1W2" id="n1f-fO-AyF"/>
                         <outlet property="noButton" destination="Qfe-xi-VM0" id="E2v-Ru-Xo4"/>
                         <outlet property="yesButton" destination="fOp-Aw-TqS" id="nwi-dK-cEP"/>
                     </connections>
@@ -1284,6 +1605,14 @@ GAME OVER</string>
                                 <rect key="frame" x="337" y="35" width="146" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-Cj-kcj" userLabel="Porta entrada">
+                                <rect key="frame" x="352" y="170" width="24" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <connections>
+                                    <action selector="showLockedDoorInfo:" destination="1R2-l3-UPS" eventType="touchUpInside" id="8iy-D4-sBe"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-9h-jGE" userLabel="Porta morrer">
                                 <rect key="frame" x="354" y="41" width="84" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1348,14 +1677,21 @@ GAME OVER</string>
                                 <rect key="frame" x="375" y="156" width="33" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lockedDoor" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-Cj-kcj" userLabel="Porta entrada">
-                                <rect key="frame" x="352" y="170" width="24" height="74"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljT-Fd-X0s" userLabel="Item Mapa">
+                                <rect key="frame" x="55" y="55" width="77" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Porta vermelha"/>
+                                <state key="normal" backgroundImage="Item Mapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="showLockedDoorInfo:" destination="1R2-l3-UPS" eventType="touchUpInside" id="8iy-D4-sBe"/>
+                                    <action selector="ShowEvacuationMap:" destination="1R2-l3-UPS" eventType="touchUpInside" id="Nvf-Qc-htT"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="Mapa de evacuação" translatesAutoresizingMaskIntoConstraints="NO" id="n7Q-k6-x4q">
+                                <rect key="frame" x="157" y="8" width="535" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cSS-ic-CnQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1363,8 +1699,10 @@ GAME OVER</string>
                     <navigationItem key="navigationItem" id="BkW-Uk-VT9"/>
                     <connections>
                         <outlet property="dieDoor" destination="cQa-AR-IQ1" id="ky3-BV-J9G"/>
+                        <outlet property="evacuationMap" destination="n7Q-k6-x4q" id="H4Y-Jf-pC6"/>
                         <outlet property="liveDoor" destination="dZ7-c8-EIe" id="o7r-0A-2D9"/>
                         <outlet property="lockedDoorInfo" destination="hYM-OJ-cg1" id="7om-LV-GEE"/>
+                        <outlet property="mapItem" destination="ljT-Fd-X0s" id="C75-Hw-iHn"/>
                         <outlet property="noButton" destination="Loa-xD-jkz" id="YuX-Kk-54L"/>
                         <outlet property="yesButton" destination="Jy1-sM-YN4" id="Qa5-1I-84D"/>
                     </connections>
@@ -1437,7 +1775,9 @@ Aguarde as próximas instruções para o próximo jogo...</string>
         <image name="Cena 5.1 - Telão" width="494" height="421"/>
         <image name="Corredor" width="436" height="828"/>
         <image name="Elevador" width="229" height="194"/>
+        <image name="Item Mapa" width="348" height="344"/>
         <image name="Laser" width="2160" height="64"/>
+        <image name="Mapa de evacuação" width="1098" height="818"/>
         <image name="Mural" width="47" height="194"/>
         <image name="Mural aberto" width="960" height="744"/>
         <image name="Next" width="108" height="91"/>

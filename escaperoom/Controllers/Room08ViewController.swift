@@ -14,13 +14,17 @@ class Room08ViewController: UIViewController {
     @IBOutlet weak var dieDoor: UIImageView!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var mapItem: UIButton!
+    @IBOutlet weak var evacuationMap: UIImageView!
     var actualDoor: DoorType?
     let nextSceneName: String = "EndViewController"
     let dieSceneName: String = "DieViewController"
     let rightDoor: DoorType = .die
+    var hasMap: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ShowMapItem()
     }
     
     @IBAction func showLockedDoorInfo(_ sender: UIButton) {
@@ -60,6 +64,24 @@ class Room08ViewController: UIViewController {
     
     @IBAction func noButtonAction(_ sender: Any) {
         self.cleanAll()
+    }
+    
+    @IBAction func ShowEvacuationMap(_ sender: Any) {
+        if self.evacuationMap.alpha == 0 {
+            self.evacuationMap.alpha = 1
+        }
+        else {
+            self.evacuationMap.alpha = 0
+        }
+    }
+    
+    func ShowMapItem() {
+        if self.hasMap {
+            self.mapItem.alpha = 1
+        }
+        else {
+            self.mapItem.alpha = 0
+        }
     }
     
     func cleanAll() {

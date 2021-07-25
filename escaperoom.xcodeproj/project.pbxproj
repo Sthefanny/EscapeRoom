@@ -25,6 +25,8 @@
 		E5A8F50226ACA1E60093D4E5 /* Room08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */; };
 		E5A8F50426ACA2080093D4E5 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50326ACA2080093D4E5 /* EndViewController.swift */; };
 		E5A8F50826ACAEB80093D4E5 /* ElevatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */; };
+		E5A8F50A26ADB9E30093D4E5 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */; };
+		E5A8F50C26ADC0770093D4E5 /* PaperTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */; };
 		E5FE214826AB724B00F1EE1C /* rexlia rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5FE214726AB724500F1EE1C /* rexlia rg.otf */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room08ViewController.swift; sourceTree = "<group>"; };
 		E5A8F50326ACA2080093D4E5 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorViewController.swift; sourceTree = "<group>"; };
+		E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
+		E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperTypeEnum.swift; sourceTree = "<group>"; };
 		E5FE214726AB724500F1EE1C /* rexlia rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rexlia rg.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,7 @@
 				E5A8F50126ACA1E60093D4E5 /* Room08ViewController.swift */,
 				E5A8F50326ACA2080093D4E5 /* EndViewController.swift */,
 				E5A8F50726ACAEB80093D4E5 /* ElevatorViewController.swift */,
+				E5A8F50926ADB9E30093D4E5 /* PanelViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A8F4F126AC925A0093D4E5 /* DoorTypeEnum.swift */,
+				E5A8F50B26ADC0770093D4E5 /* PaperTypeEnum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E555695126A894BC008C8E88 /* ViewController.swift in Sources */,
+				E5A8F50C26ADC0770093D4E5 /* PaperTypeEnum.swift in Sources */,
 				E555694D26A894BC008C8E88 /* AppDelegate.swift in Sources */,
 				E5A8F4FE26ACA1CA0093D4E5 /* Room06ViewController.swift in Sources */,
+				E5A8F50A26ADB9E30093D4E5 /* PanelViewController.swift in Sources */,
 				E5A8F4F226AC925A0093D4E5 /* DoorTypeEnum.swift in Sources */,
 				E5A8F4FA26ACA1B00093D4E5 /* Room04ViewController.swift in Sources */,
 				E5A8F4F426AC949F0093D4E5 /* Room02ViewController.swift in Sources */,

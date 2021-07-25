@@ -14,13 +14,17 @@ class Room01ViewController: UIViewController {
     @IBOutlet weak var dieDoor: UIImageView!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var mapItem: UIButton!
+    @IBOutlet weak var evacuationMap: UIImageView!
     var actualDoor: DoorType?
     let nextSceneName: String = "Room02ViewController"
     let dieSceneName: String = "DieViewController"
     let rightDoor: DoorType = .die
+    var hasMap: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ShowMapItem()
     }
     
     @IBAction func showLockedDoorInfo(_ sender: UIButton) {
@@ -50,16 +54,40 @@ class Room01ViewController: UIViewController {
     
     @IBAction func yesButtonAction(_ sender: Any) {
         if self.actualDoor != nil {
-            let nextScene = self.actualDoor == rightDoor ? nextSceneName : dieSceneName
-            
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: nextScene)
-            self.present(newViewController, animated: false, completion: nil)
+            
+            if self.actualDoor == rightDoor {
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: nextSceneName) as! Room02ViewController
+                newViewController.hasMap = self.hasMap
+                self.present(newViewController, animated: false, completion: nil)
+            }
+            else {
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: dieSceneName)
+                self.present(newViewController, animated: false, completion: nil)
+            }
         }
     }
     
     @IBAction func noButtonAction(_ sender: Any) {
         self.cleanAll()
+    }
+    
+    @IBAction func ShowEvacuationMap(_ sender: Any) {
+        if self.evacuationMap.alpha == 0 {
+            self.evacuationMap.alpha = 1
+        }
+        else {
+            self.evacuationMap.alpha = 0
+        }
+    }
+    
+    func ShowMapItem() {
+        if self.hasMap {
+            self.mapItem.alpha = 1
+        }
+        else {
+            self.mapItem.alpha = 0
+        }
     }
     
     func cleanAll() {
